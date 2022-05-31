@@ -1,0 +1,14 @@
+<h1>hi im the practices index.ejs</h1>
+
+<h2>Search practices</h2>
+<form action="/practices" method="GET">
+<label>Practice name</label>
+<input type="text" name="name" value="<%= searchOptions.name %>">
+<button type="submit" >Search</button>
+</form>
+<br>
+<br>
+<h2>This is the output from search</h2>
+<% practices.forEach(element => { %>
+    <h3><%= element.name %></h3>     
+<% }) %> 

@@ -7,8 +7,9 @@
     <title>Express Node Template</title>
 </head>
 <body>
-    <header>header</header>
+    <%- include('../partials/header.ejs') %>
     <%- body %> 
-    <footer>footer</footer>
+    <%- include('../partials/errorMessage.ejs')  %> 
+    <%- include('../partials/footer.ejs') %>
 </body>
 </html> 
